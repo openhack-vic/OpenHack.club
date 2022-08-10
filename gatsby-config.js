@@ -22,5 +22,10 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "G-CTKKNYBVQP"
+    }
   }]
 };
