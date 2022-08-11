@@ -1,10 +1,11 @@
 import * as React from "react"
 import "../global.css"
 import "../fonts.css"
+import Logo from "../images/OpenHack.svg"
 
 const IndexPage = () => {
   return (
-    <h1 style={{textAlign: "center"}}>OpenHack Victoria</h1>
+    <Logo/>
   )
 }
 
