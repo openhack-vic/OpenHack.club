@@ -1,11 +1,15 @@
 import * as React from "react"
 import "../global.css"
 import "../fonts.css"
-import Logo from "../images/OpenHack.svg"
+import Logo from "../components/Logo"
+import AltLogo from "../components/AltLogo"
 
 const IndexPage = () => {
   return (
-    <Logo/>
+    <>
+      <Logo/>
+      <AltLogo/>
+    </>
   )
 }
 
