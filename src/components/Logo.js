@@ -4,15 +4,15 @@ import styled from "@emotion/styled"
 import LogoSVG from "../images/OpenHack.svg"
 
 const LogoWrap = styled.div`
-  --logo-primary: ${({primaryColor}) => primaryColor};
-  --logo-fill: ${({fillColor}) => fillColor};
+  --logo-primary: var(--theme-${({theme}) => theme}-primary);
+  --logo-fill: var(--theme-${({theme}) => theme}-fill);
 `
 
-const Logo = () => {
+const Logo = ({theme}) => {
   return(
-  <LogoWrap primaryColor="#00aaaa" fillColor="#aaff00">
-    <LogoSVG/>
-  </LogoWrap>
+    <LogoWrap theme={theme}>
+      <LogoSVG/>
+    </LogoWrap>
   )
 }
 

@@ -1,4 +1,28 @@
+:root {
+  --theme-1-primary: #7e00f7;
+  --theme-1-fill: #84ffb8;
+  --theme-2-primary: #004bf2;
+  --theme-2-fill: #fff368;
+  --theme-3-primary: #e50e73;
+  --theme-3-fill: #ffe3c6;
+  --theme-4-primary: #6b3a53;
+  --theme-4-fill: #ffc4fd;
+  --theme-5-primary: #ff2626;
+  --theme-5-fill: #ffcceb;
+  --theme-6-primary: #2a785e;
+  --theme-6-fill: #cfe3e2;
+  --theme-7-primary: #1e4e6d;
+  --theme-7-fill: #ffe3a7;
+  --theme-8-primary: #484848;
+  --theme-8-fill: #d3d3d3;
+  --grey-fill: #ede8e3;
+}
+
 * {
   font-family: "Ellograph CF", monospace;
   color: red;
+}
+
+html {
+  background-color: var(--grey-fill);
 }
