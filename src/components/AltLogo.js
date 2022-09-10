@@ -6,6 +6,8 @@ import AltLogoSVG from "../images/OpenHackAlt.svg"
 const AltLogoWrap = styled.div`
   --logo-primary: var(--theme-${({theme}) => theme}-primary);
   --logo-fill: var(--theme-${({theme}) => theme}-fill);
+
+  svg { display: block; }
 `
 
 const AltLogo = ({theme}) => {
