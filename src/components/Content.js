@@ -1,5 +1,5 @@
-import * as React from "react"
-import styled from "@emotion/styled"
+import * as React from "react";
+import styled from "@emotion/styled";
 
 const Content = styled.div`
   line-height: 1.4;
@@ -24,6 +24,6 @@ const Content = styled.div`
     color: inherit;
     font-weight: bold;
   }
-`
+`;
 
-export default Content
+export default Content;

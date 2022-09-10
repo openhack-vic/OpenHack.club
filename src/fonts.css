@@ -3,7 +3,7 @@
   font-weight: 700;
   font-style: normal;
   src: url("./fonts/EllographCF-Bold.woff2") format("woff2"),
-       url("./fonts/EllographCF-Bold.woff") format("woff");
+    url("./fonts/EllographCF-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 700;
   font-style: italic;
   src: url("./fonts/EllographCF-BoldItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-BoldItalic.woff") format("woff");
+    url("./fonts/EllographCF-BoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 600;
   font-style: normal;
   src: url("./fonts/EllographCF-DemiBold.woff2") format("woff2"),
-       url("./fonts/EllographCF-DemiBold.woff") format("woff");
+    url("./fonts/EllographCF-DemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 600;
   font-style: italic;
   src: url("./fonts/EllographCF-DemiBoldItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-DemiBoldItalic.woff") format("woff");
+    url("./fonts/EllographCF-DemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-weight: 800;
   font-style: normal;
   src: url("./fonts/EllographCF-ExtraBold.woff2") format("woff2"),
-       url("./fonts/EllographCF-ExtraBold.woff") format("woff");
+    url("./fonts/EllographCF-ExtraBold.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-weight: 800;
   font-style: italic;
   src: url("./fonts/EllographCF-ExtraBoldItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-ExtraBoldItalic.woff") format("woff");
+    url("./fonts/EllographCF-ExtraBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-weight: 200;
   font-style: normal;
   src: url("./fonts/EllographCF-ExtraLight.woff2") format("woff2"),
-       url("./fonts/EllographCF-ExtraLight.woff") format("woff");
+    url("./fonts/EllographCF-ExtraLight.woff") format("woff");
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-weight: 200;
   font-style: italic;
   src: url("./fonts/EllographCF-ExtraLightItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-ExtraLightItalic.woff") format("woff");
+    url("./fonts/EllographCF-ExtraLightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-weight: 900;
   font-style: normal;
   src: url("./fonts/EllographCF-Heavy.woff2") format("woff2"),
-       url("./fonts/EllographCF-Heavy.woff") format("woff");
+    url("./fonts/EllographCF-Heavy.woff") format("woff");
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-weight: 900;
   font-style: italic;
   src: url("./fonts/EllographCF-HeavyItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-HeavyItalic.woff") format("woff");
+    url("./fonts/EllographCF-HeavyItalic.woff") format("woff");
 }
 
 @font-face {
@@ -83,7 +83,7 @@
   font-weight: 300;
   font-style: normal;
   src: url("./fonts/EllographCF-Light.woff2") format("woff2"),
-       url("./fonts/EllographCF-Light.woff") format("woff");
+    url("./fonts/EllographCF-Light.woff") format("woff");
 }
 
 @font-face {
@@ -91,7 +91,7 @@
   font-weight: 300;
   font-style: italic;
   src: url("./fonts/EllographCF-LightItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-LightItalic.woff") format("woff");
+    url("./fonts/EllographCF-LightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -99,7 +99,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("./fonts/EllographCF-Regular.woff2") format("woff2"),
-       url("./fonts/EllographCF-Regular.woff") format("woff");
+    url("./fonts/EllographCF-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -107,7 +107,7 @@
   font-weight: 400;
   font-style: italic;
   src: url("./fonts/EllographCF-RegularItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-RegularItalic.woff") format("woff");
+    url("./fonts/EllographCF-RegularItalic.woff") format("woff");
 }
 
 @font-face {
@@ -115,7 +115,7 @@
   font-weight: 100;
   font-style: normal;
   src: url("./fonts/EllographCF-Thin.woff2") format("woff2"),
-       url("./fonts/EllographCF-Thin.woff") format("woff");
+    url("./fonts/EllographCF-Thin.woff") format("woff");
 }
 
 @font-face {
@@ -123,5 +123,5 @@
   font-weight: 100;
   font-style: italic;
   src: url("./fonts/EllographCF-ThinItalic.woff2") format("woff2"),
-       url("./fonts/EllographCF-ThinItalic.woff") format("woff");
+    url("./fonts/EllographCF-ThinItalic.woff") format("woff");
 }

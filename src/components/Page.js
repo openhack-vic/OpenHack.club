@@ -1,7 +1,7 @@
-import * as React from "react"
-import styled from "@emotion/styled"
+import * as React from "react";
+import styled from "@emotion/styled";
 
-import Logo from "./Logo"
+import Logo from "./Logo";
 
 const Wrap = styled.div`
   display: grid;
@@ -11,14 +11,14 @@ const Wrap = styled.div`
   padding: 1rem;
   max-width: 54rem;
   margin: 0 auto;
-`
+`;
 
 const Header = styled.div`
   grid-column-start: span 3;
   max-height: 100%;
-`
+`;
 
-const Page = ({children}) => {
+const Page = ({ children }) => {
   return (
     <Wrap>
       <Header>
@@ -26,7 +26,7 @@ const Page = ({children}) => {
       </Header>
       {children}
     </Wrap>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
