@@ -26,11 +26,16 @@ const Content = styled.div`
   }
 
   ul {
-    padding-left: 1rem;
+    padding-left: 0rem;
+    list-style-type: none;
   }
 
   li + li {
     margin-top: 0.625rem;
+
+    :before {
+      content: "|> ";
+    }
   }
 `;
 
