@@ -2,17 +2,29 @@ import * as React from "react";
 import "../global.css";
 import "../fonts.css";
 import Logo from "../components/Logo";
+import AltLogo from "../components/AltLogo";
 import Box from "../components/Box";
 import Content from "../components/Content";
+
+import randomTheme from "../randomTheme";
 
 import Page from "../components/Page";
 import Container from "../components/Container";
 
+const Header = styled.header`
+  grid-column-start: span 6;
+  max-height: 100%;
+`;
+
 const IndexPage = () => {
   return (
     <Page>
+      <Header>
+        <Logo theme={1} />
+      </Header>
+
       <Container span={6}>
-        <Box theme="4">
+        <Box theme="2">
           <Content>
             <h1>About OpenHack</h1>
             <p>
@@ -29,7 +41,7 @@ const IndexPage = () => {
       </Container>
 
       <Container span={3}>
-        <Box theme="7">
+        <Box theme="3">
           <Content>
             <h1>Format</h1>
 
@@ -54,13 +66,13 @@ const IndexPage = () => {
       </Container>
 
       <Container span={3}>
-        <Box theme="6">
+        <Box theme="4">
           <Content>
             <h1>When/Where</h1>
             <p>
               We meet at 6pm, every Tuesday at James Joyce Bistro, which is the
               restaurant in{" "}
-              <a href="https://goo.gl/maps/jz692DVt5Rs3C4vZ9">
+              <a href="https://goo.gl/maps/jz692DVt5Rs3C4vZ9" target="_blank">
                 Peacock Billiards
               </a>
               .
@@ -68,7 +80,10 @@ const IndexPage = () => {
 
             <p>
               Please join the{" "}
-              <a href="https://www.meetup.com/openhack-victoria/">
+              <a
+                href="https://www.meetup.com/openhack-victoria/"
+                target="_blank"
+              >
                 Meetup Group
               </a>{" "}
               and RSVP to the events if you're coming! It helps show others that
@@ -79,8 +94,63 @@ const IndexPage = () => {
         </Box>
       </Container>
 
-      <Container span={6}>
-        <Box theme={8}>
+      <Container span={2}>
+        <Box theme={5}>
+          <Content>
+            <h1>What is "OpenHack"?</h1>
+            <p>
+              OpenHack is a family of meetups proposed by{" "}
+              <a href="https://twitter.com/qrush" target="_blank">
+                qrush
+              </a>{" "}
+              (Nick Quaranto) in a lightning talk at RailsConf 2013.{" "}
+              <a href="https://github.com/cbrunsdon" target="_blank">
+                Clarke Brunsdon
+              </a>
+              , a local software developer and entrepreneur, brought the idea
+              back to Victoria and started OpenHack Victoria.
+            </p>
+
+            <p>
+              The first lightning talk in this video goes over the original
+              concept for OpenHack. Almost ten years later, Victoria OpenHack
+              remains one of the few OpenHack chapters that's still alive.
+            </p>
+          </Content>
+        </Box>
+      </Container>
+      <Container span={4}>
+        <Box theme={6} padding={false}>
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "56.25%",
+              paddingTop: 30,
+              height: 0,
+              overflow: "hidden",
+            }}
+          >
+            <iframe
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                borderRadius: 9,
+              }}
+              src="https://www.youtube.com/embed/4T24oUPPaFI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </Box>
+      </Container>
+
+      <Container span={4}>
+        <Box theme={7}>
           <Content>
             <h1>Code of Conduct</h1>
 
@@ -133,6 +203,10 @@ const IndexPage = () => {
             </p>
           </Content>
         </Box>
+      </Container>
+
+      <Container span={2}>
+        <AltLogo theme={8} />
       </Container>
     </Page>
   );

@@ -18,13 +18,17 @@ const BoxInner = styled.section`
   position: relative;
   top: calc(-1 * var(--spacing));
   left: calc(-1 * var(--spacing));
-  padding: 1rem;
+  ${({ padding }) => (padding ? "padding: 1rem;" : "")}
+  ${({ padding, theme }) =>
+    !padding ? `background-color: var(--theme-${theme}-primary)` : ""}
 `;
 
-const Box = ({ children, theme }) => {
+const Box = ({ children, theme, padding = true }) => {
   return (
     <BoxOuter theme={theme}>
-      <BoxInner theme={theme}>{children}</BoxInner>
+      <BoxInner theme={theme} padding={padding}>
+        {children}
+      </BoxInner>
     </BoxOuter>
   );
 };
