@@ -28,14 +28,14 @@ const Content = styled.div`
   ul {
     padding-left: 0rem;
     list-style-type: none;
+
+    li:before {
+      content: "→ ";
+    }
   }
 
   li + li {
     margin-top: 0.625rem;
-
-    :before {
-      content: "|> ";
-    }
   }
 `;
 
