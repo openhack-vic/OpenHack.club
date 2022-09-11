@@ -24,4 +24,5 @@
 
 html {
   background-color: var(--grey-fill);
+  font-size: 18px;
 }

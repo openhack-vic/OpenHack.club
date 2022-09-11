@@ -30,7 +30,7 @@ const Content = styled.div`
   }
 
   li + li {
-    margin-top: 0.5rem;
+    margin-top: 0.625rem;
   }
 `;
 

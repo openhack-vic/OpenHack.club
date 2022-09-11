@@ -1,71 +1,71 @@
 import * as React from "react";
+import styled from "@emotion/styled";
+
 import "../global.css";
 import "../fonts.css";
+
 import Logo from "../components/Logo";
 import AltLogo from "../components/AltLogo";
 import Box from "../components/Box";
 import Content from "../components/Content";
-
-import randomTheme from "../randomTheme";
-
 import Page from "../components/Page";
 import Container from "../components/Container";
 
-const Header = styled.header`
-  grid-column-start: span 6;
-  max-height: 100%;
+import randomTheme from "../randomTheme";
+
+const MainLogoWrap = styled.div`
+  max-width: 360px;
 `;
 
 const IndexPage = () => {
   return (
     <Page>
-      <Header>
-        <Logo theme={1} />
-      </Header>
+      <Container span={2}>
+        <MainLogoWrap>
+          <Logo theme={1} />
+        </MainLogoWrap>
+      </Container>
 
-      <Container span={6}>
+      <Container span={4}>
         <Box theme="2">
           <Content>
-            <h1>About OpenHack</h1>
             <p>
-              OpenHack Victoria is a casual meetup for software developers,
-              hobbyists, and anyone interested software development. We're one
-              of the longest continuously running software meetups in Victoria
-              (the one in British Columbia, not Australia), having started
-              almost ten years ago. We still meet weekly, providing a venue for
-              software developers to hang out, hack on side project, and meet
-              others in the industry.
+              OpenHack Victoria is a casual meetup for programmers of all
+              experience levels. Whether you're an industry veteran or looking
+              for your first job as a software developer, come join us at
+              OpenHack. We're one of the longest continuously running software
+              meetups in Victoria, having started almost ten years ago. We still
+              meet weekly, providing a place for software developers to hang
+              out, hack on side projects, and meet others in the industry.
             </p>
           </Content>
         </Box>
       </Container>
 
-      <Container span={3}>
+      <Container span={2}>
         <Box theme="3">
           <Content>
             <h1>Format</h1>
 
-            <p>
-              The short version: bring your laptop and work on whatever you
-              want.
-            </p>
-
-            <p>The details:</p>
-
             <ul>
-              <li>We do introductions at 6:15pm.</li>
-              <li>Don’t forget to bring a computer!</li>
+              <li>We do introductions at 6:15pm sharp!</li>
+              <li>Bring your laptop!</li>
               <li>
-                Work on anything you want: open-source, closed-source, side
-                projects, work, play.
+                Work on anything you want: open-source, closed-source,
+                side-projects, work, play.
               </li>
               <li>All experience levels and technologies are welcome.</li>
+              <li>
+                Food and drinks are available from the restaurant, but are not
+                provided.
+              </li>
+              <li>Follow our code of conduct! (See below)</li>
             </ul>
           </Content>
         </Box>
       </Container>
 
-      <Container span={3}>
+      <Container span={2}>
         <Box theme="4">
           <Content>
             <h1>When/Where</h1>
@@ -87,19 +87,63 @@ const IndexPage = () => {
                 Meetup Group
               </a>{" "}
               and RSVP to the events if you're coming! It helps show others that
-              the group is active. (It's not uncommon for to have only a couple
-              RSVPs, but an attendance of fifteen or twenty people.)
+              the group is active.
             </p>
           </Content>
         </Box>
       </Container>
 
       <Container span={2}>
+        <Box theme="4">
+          <Content>
+            <h1>Links</h1>
+
+            <ul>
+              <li>
+                Join the{" "}
+                <a href="https://discord.gg/jRbukPPEfH" target="_blank">
+                  Discord server
+                </a>
+              </li>
+              <li>
+                Follow{" "}
+                <a href="https://twitter.com/openhackvic" target="_blank">
+                  our Twitter account
+                </a>{" "}
+                for updates
+              </li>
+              <li>
+                RSVP on{" "}
+                <a
+                  href="https://www.meetup.com/openhack-victoria/"
+                  target="_blank"
+                >
+                  Meetup.com
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jardonamron" target="_blank">
+                  Jared
+                </a>{" "}
+                is the current organizer
+              </li>
+              <li>
+                OpenHack Victoria is sponsored by{" "}
+                <a href="https://supergood.software" target="_blank">
+                  Super Good
+                </a>
+              </li>
+            </ul>
+          </Content>
+        </Box>
+      </Container>
+
+      <Container span={3}>
         <Box theme={5}>
           <Content>
             <h1>What is "OpenHack"?</h1>
             <p>
-              OpenHack is a family of meetups proposed by{" "}
+              OpenHack is a family of meetups put forward by{" "}
               <a href="https://twitter.com/qrush" target="_blank">
                 qrush
               </a>{" "}
@@ -108,18 +152,18 @@ const IndexPage = () => {
                 Clarke Brunsdon
               </a>
               , a local software developer and entrepreneur, brought the idea
-              back to Victoria and started OpenHack Victoria.
+              back to Victoria and started our OpenHack chapter.
             </p>
 
             <p>
               The first lightning talk in this video goes over the original
               concept for OpenHack. Almost ten years later, Victoria OpenHack
-              remains one of the few OpenHack chapters that's still alive.
+              remains one of the few OpenHack chapters that's still running.
             </p>
           </Content>
         </Box>
       </Container>
-      <Container span={4}>
+      <Container span={3}>
         <Box theme={6} padding={false}>
           <div
             style={{
@@ -206,7 +250,9 @@ const IndexPage = () => {
       </Container>
 
       <Container span={2}>
-        <AltLogo theme={8} />
+        <div style={{ maxWidth: 360 }}>
+          <AltLogo theme={8} />
+        </div>
       </Container>
     </Page>
   );
