@@ -10,7 +10,7 @@ const BoxOuter = styled.div`
   position: relative;
 `;
 
-const BoxInner = styled.div`
+const BoxInner = styled.section`
   color: var(--theme-${({ theme }) => theme}-primary);
   background-color: var(--theme-${({ theme }) => theme}-fill);
   border: 8px solid var(--theme-${({ theme }) => theme}-primary);

@@ -2,7 +2,6 @@ import * as React from "react";
 import "../global.css";
 import "../fonts.css";
 import Logo from "../components/Logo";
-import AltLogo from "../components/AltLogo";
 import Box from "../components/Box";
 import Content from "../components/Content";
 
@@ -12,71 +11,75 @@ import Container from "../components/Container";
 const IndexPage = () => {
   return (
     <Page>
-      <Container span={3}>
+      <Container span={6}>
         <Box theme="4">
           <Content>
-            <h1>Title</h1>
+            <h1>About OpenHack</h1>
             <p>
-              Aberration type ability modifier acid effects attack cast a spell
-              charisma cure spell elf domain fire domain frightful presence
-              goblinoid subtype good subtype heat dangers inflict spell living
-              luck bonus native subtype nonplayer character renewal domain
-              spider domain subschool supernatural ability temporary hit points
-              turning check water subtype.
-            </p>
-          </Content>
-        </Box>
-      </Container>
-
-      <Container span={1}>
-        <Box theme="7">
-          <Content>
-            <h1>Title</h1>
-            <p>
-              Aberration type ability modifier acid effects attack cast a spell
-              charisma cure spell elf domain fire domain frightful presence
-              goblinoid subtype good subtype heat dangers inflict spell living
-              luck bonus native subtype nonplayer character renewal domain
-              spider domain subschool supernatural ability temporary hit points
-              turning check water subtype.
-            </p>
-          </Content>
-        </Box>
-      </Container>
-
-      <Container span={1}>
-        <Box theme="6">
-          <Content>
-            <h1>Title</h1>
-            <p>
-              Aberration type ability modifier acid effects attack cast a spell
-              charisma cure spell elf domain fire domain frightful presence
-              goblinoid subtype good subtype heat dangers inflict spell living
-              luck bonus native subtype nonplayer character renewal domain
-              spider domain subschool supernatural ability temporary hit points
-              turning check water subtype.
-            </p>
-          </Content>
-        </Box>
-      </Container>
-
-      <Container span={1}>
-        <Box theme="5">
-          <Content>
-            <h1>Title</h1>
-            <p>
-              Aberration type ability modifier acid effects attack cast a spell
-              charisma cure spell elf domain fire domain frightful presence
-              goblinoid subtype good subtype heat dangers inflict spell living
-              luck bonus native subtype nonplayer character renewal domain
-              spider domain subschool supernatural ability temporary hit points
-              turning check water subtype.
+              OpenHack Victoria is a casual meetup for software developers,
+              hobbyists, and anyone interested software development. We're one
+              of the longest continuously running software meetups in Victoria
+              (the one in British Columbia, not Australia), having started
+              almost ten years ago. We still meet weekly, providing a venue for
+              software developers to hang out, hack on side project, and meet
+              others in the industry.
             </p>
           </Content>
         </Box>
       </Container>
 
       <Container span={3}>
+        <Box theme="7">
+          <Content>
+            <h1>Format</h1>
+
+            <p>
+              The short version: bring your laptop and work on whatever you
+              want.
+            </p>
+
+            <p>The details:</p>
+
+            <ul>
+              <li>We do introductions at 6:15pm.</li>
+              <li>Don’t forget to bring a computer!</li>
+              <li>
+                Work on anything you want: open-source, closed-source, side
+                projects, work, play.
+              </li>
+              <li>All experience levels and technologies are welcome.</li>
+            </ul>
+          </Content>
+        </Box>
+      </Container>
+
+      <Container span={3}>
+        <Box theme="6">
+          <Content>
+            <h1>When/Where</h1>
+            <p>
+              We meet at 6pm, every Tuesday at James Joyce Bistro, which is the
+              restaurant in{" "}
+              <a href="https://goo.gl/maps/jz692DVt5Rs3C4vZ9">
+                Peacock Billiards
+              </a>
+              .
+            </p>
+
+            <p>
+              Please join the{" "}
+              <a href="https://www.meetup.com/openhack-victoria/">
+                Meetup Group
+              </a>{" "}
+              and RSVP to the events if you're coming! It helps show others that
+              the group is active. (It's not uncommon for to have only a couple
+              RSVPs, but an attendance of fifteen or twenty people.)
+            </p>
+          </Content>
+        </Box>
+      </Container>
+
+      <Container span={6}>
         <Box theme={8}>
           <Content>
             <h1>Code of Conduct</h1>

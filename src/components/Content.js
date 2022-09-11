@@ -24,6 +24,14 @@ const Content = styled.div`
     color: inherit;
     font-weight: bold;
   }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
 `;
 
 export default Content;
