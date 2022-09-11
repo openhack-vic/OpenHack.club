@@ -27,8 +27,8 @@ const IndexPage = () => {
   const shuffleColours = () => setThemes(() => shuffle(allThemes));
 
   useEffect(() => {
-    shuffleColours()
-  }, [0])
+    shuffleColours();
+  }, [0]);
 
   return (
     <Page>
@@ -52,11 +52,9 @@ const IndexPage = () => {
             </p>
 
             <p>
-              You can{" "}
               <a href="#" onClick={shuffleColours}>
-                shuffle
-              </a>{" "}
-              the colours.
+                Click this!
+              </a>
             </p>
           </Content>
         </Box>
