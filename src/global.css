@@ -1,6 +1,6 @@
 :root {
-  --theme-1-primary: #7e00f7;
-  --theme-1-fill: #84ffb8;
+  --theme-1-primary: #484848;
+  --theme-1-fill: #d3d3d3;
   --theme-2-primary: #004bf2;
   --theme-2-fill: #fff368;
   --theme-3-primary: #ff1fed;
@@ -13,8 +13,10 @@
   --theme-6-fill: #cfe3e2;
   --theme-7-primary: #1e4e6d;
   --theme-7-fill: #ffe3a7;
-  --theme-8-primary: #484848;
-  --theme-8-fill: #d3d3d3;
+  --theme-8-primary: #7e00f7;
+  --theme-8-fill: #84ffb8;
+  --theme-9-primary: #ff4848;
+  --theme-9-fill: #ffd3ff;
   --grey-fill: #ede8e3;
 }
 

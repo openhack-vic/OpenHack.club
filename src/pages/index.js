@@ -1,5 +1,7 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
+import shuffle from "lodash.shuffle";
 
 import "../global.css";
 import "../fonts.css";
@@ -11,23 +13,33 @@ import Content from "../components/Content";
 import Page from "../components/Page";
 import Container from "../components/Container";
 
-import randomTheme from "../randomTheme";
-
 const MainLogoWrap = styled.div`
   max-width: 360px;
 `;
 
+const allThemes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const IndexPage = () => {
+  const [themes, setThemes] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1]);
+
+  const [one, two, three, four, five, six, seven, eight, nine] = themes;
+
+  const shuffleColours = () => setThemes(() => shuffle(allThemes));
+
+  useEffect(() => {
+    shuffleColours()
+  }, [0])
+
   return (
     <Page>
       <Container span={2}>
         <MainLogoWrap>
-          <Logo theme={1} />
+          <Logo theme={one} />
         </MainLogoWrap>
       </Container>
 
       <Container span={4}>
-        <Box theme="2">
+        <Box theme={two}>
           <Content>
             <p>
               OpenHack Victoria is a casual meetup for programmers of all
@@ -38,12 +50,20 @@ const IndexPage = () => {
               meet weekly, providing a place for software developers to hang
               out, hack on side projects, and meet others in the industry.
             </p>
+
+            <p>
+              You can{" "}
+              <a href="#" onClick={shuffleColours}>
+                shuffle
+              </a>{" "}
+              the colours.
+            </p>
           </Content>
         </Box>
       </Container>
 
       <Container span={2}>
-        <Box theme="3">
+        <Box theme={three}>
           <Content>
             <h1>Format</h1>
 
@@ -66,7 +86,7 @@ const IndexPage = () => {
       </Container>
 
       <Container span={2}>
-        <Box theme="4">
+        <Box theme={four}>
           <Content>
             <h1>When/Where</h1>
             <p>
@@ -94,7 +114,7 @@ const IndexPage = () => {
       </Container>
 
       <Container span={2}>
-        <Box theme="4">
+        <Box theme={five}>
           <Content>
             <h1>Links</h1>
 
@@ -139,7 +159,7 @@ const IndexPage = () => {
       </Container>
 
       <Container span={3}>
-        <Box theme={5}>
+        <Box theme={six}>
           <Content>
             <h1>What is "OpenHack"?</h1>
             <p>
@@ -164,7 +184,7 @@ const IndexPage = () => {
         </Box>
       </Container>
       <Container span={3}>
-        <Box theme={6} padding={false}>
+        <Box theme={seven} padding={false}>
           <div
             style={{
               position: "relative",
@@ -194,7 +214,7 @@ const IndexPage = () => {
       </Container>
 
       <Container span={4}>
-        <Box theme={7}>
+        <Box theme={eight}>
           <Content>
             <h1>Code of Conduct</h1>
 
@@ -251,7 +271,7 @@ const IndexPage = () => {
 
       <Container span={2}>
         <div style={{ maxWidth: 360 }}>
-          <AltLogo theme={8} />
+          <AltLogo theme={nine} />
         </div>
       </Container>
     </Page>
