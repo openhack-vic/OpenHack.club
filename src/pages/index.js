@@ -112,7 +112,11 @@ const IndexPage = () => {
             <p>
               We meet at 6pm, every Tuesday at James Joyce Bistro, which is the
               restaurant in{" "}
-              <a href="https://goo.gl/maps/jz692DVt5Rs3C4vZ9" target="_blank">
+              <a
+                href="https://goo.gl/maps/jz692DVt5Rs3C4vZ9"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Peacock Billiards
               </a>
               .
@@ -123,6 +127,7 @@ const IndexPage = () => {
               <a
                 href="https://www.meetup.com/openhack-victoria/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Meetup Group
               </a>{" "}
@@ -141,13 +146,21 @@ const IndexPage = () => {
             <ul>
               <li>
                 Join the{" "}
-                <a href="https://discord.gg/jRbukPPEfH" target="_blank">
+                <a
+                  href="https://discord.gg/jRbukPPEfH"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Discord server
                 </a>
               </li>
               <li>
                 Follow{" "}
-                <a href="https://twitter.com/openhackvic" target="_blank">
+                <a
+                  href="https://twitter.com/openhackvic"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   our Twitter account
                 </a>{" "}
                 for updates
@@ -157,19 +170,28 @@ const IndexPage = () => {
                 <a
                   href="https://www.meetup.com/openhack-victoria/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Meetup.com
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/jardonamron" target="_blank">
+                <a
+                  href="https://twitter.com/jardonamron"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Jared
                 </a>{" "}
                 is the current organizer
               </li>
               <li>
                 OpenHack Victoria is sponsored by{" "}
-                <a href="https://supergood.software" target="_blank">
+                <a
+                  href="https://supergood.software"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Super Good
                 </a>
               </li>
@@ -184,11 +206,19 @@ const IndexPage = () => {
             <h1>What is "OpenHack"?</h1>
             <p>
               OpenHack is a family of meetups put forward by{" "}
-              <a href="https://twitter.com/qrush" target="_blank">
+              <a
+                href="https://twitter.com/qrush"
+                target="_blank"
+                rel="noreferrer"
+              >
                 qrush
               </a>{" "}
               (Nick Quaranto) in a lightning talk at RailsConf 2013.{" "}
-              <a href="https://github.com/cbrunsdon" target="_blank">
+              <a
+                href="https://github.com/cbrunsdon"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Clarke Brunsdon
               </a>
               , a local software developer and entrepreneur, brought the idea
