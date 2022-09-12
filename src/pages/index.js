@@ -93,7 +93,7 @@ title
                 Food and drinks are available from the restaurant, but are not
                 provided.
               </li>
-              <li>Follow our code of conduct! (See below)</li>
+              <li>Follow our <a href="#code-of-conduct">code of conduct</a>!</li>
             </ul>
           </Content>
         </Box>
@@ -227,7 +227,7 @@ title
         </Box>
       </Container>
 
-      <Container span={4}>
+      <Container span={4} id="code-of-conduct">
         <Box theme={eight}>
           <Content>
             <h1>Code of Conduct</h1>
