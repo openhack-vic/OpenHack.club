@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import shuffle from "lodash.shuffle";
+import Helmet from "react-helmet";
 
 import "../global.css";
 import "../fonts.css";
@@ -32,6 +33,21 @@ const IndexPage = () => {
 
   return (
     <Page>
+      <Helmet>
+        <meta charSet="utf-8" />
+
+        <title>OpenHack Victoria</title>
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@OpenHackVic" />
+        <meta name="twitter:creator" content="@OpenHackVic" />
+
+        <meta name="og:url" content="https://OpenHack.club" />
+        <meta name="og:image" content="https://OpenHack.club/ogbanner.png" />
+        <meta name="og:title" content="OpenHack Victoria" />
+        <meta name="og:description" content="A casual weekly meetup for programmers of all experience levels in Victoria, BC." />
+title
+      </Helmet>
       <Container span={2}>
         <MainLogoWrap>
           <Logo theme={one} />
