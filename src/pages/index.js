@@ -48,7 +48,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     shuffleColours();
-  }, [0]);
+  }, []);
 
   return (
     <Page>
@@ -72,7 +72,13 @@ const IndexPage = () => {
             </p>
 
             <p>
-              <a href="#" onClick={shuffleColours}>
+              <a
+                href="#shuffle"
+                onClick={(e) => {
+                  shuffleColours();
+                  e.preventDefault();
+                }}
+              >
                 Click this!
               </a>
             </p>
