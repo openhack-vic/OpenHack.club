@@ -1,5 +1,5 @@
-import * as React from "react";
-import styled from "@emotion/styled";
+import * as React from "react"
+import styled from "@emotion/styled"
 
 const Wrap = styled.div`
   display: grid;
@@ -8,10 +8,10 @@ const Wrap = styled.div`
   padding: 1rem;
   max-width: 64rem;
   margin: 0 auto;
-`;
+`
 
 const Page = ({ children }) => {
-  return <Wrap>{children}</Wrap>;
-};
+  return <Wrap>{children}</Wrap>
+}
 
-export default Page;
+export default Page

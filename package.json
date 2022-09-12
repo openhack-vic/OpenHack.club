@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier -w ."
+    "format": "prettier -w --no-semi ."
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",

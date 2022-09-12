@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 const Content = styled.div`
   line-height: 1.4;
@@ -36,6 +36,6 @@ const Content = styled.div`
   li + li {
     margin-top: 0.625rem;
   }
-`;
+`
 
-export default Content;
+export default Content

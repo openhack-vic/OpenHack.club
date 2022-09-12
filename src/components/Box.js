@@ -1,5 +1,5 @@
-import * as React from "react";
-import styled from "@emotion/styled";
+import * as React from "react"
+import styled from "@emotion/styled"
 
 const BoxOuter = styled.div`
   --spacing: 1.25rem;
@@ -8,7 +8,7 @@ const BoxOuter = styled.div`
   margin-top: var(--spacing);
   margin-left: var(--spacing);
   position: relative;
-`;
+`
 
 const BoxInner = styled.section`
   color: var(--theme-${({ theme }) => theme}-primary);
@@ -21,7 +21,7 @@ const BoxInner = styled.section`
   ${({ padding }) => (padding ? "padding: 1rem;" : "")}
   ${({ padding, theme }) =>
     !padding ? `background-color: var(--theme-${theme}-primary)` : ""}
-`;
+`
 
 const Box = ({ children, theme, padding = true }) => {
   return (
@@ -30,7 +30,7 @@ const Box = ({ children, theme, padding = true }) => {
         {children}
       </BoxInner>
     </BoxOuter>
-  );
-};
+  )
+}
 
-export default Box;
+export default Box

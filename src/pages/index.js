@@ -1,23 +1,23 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
-import styled from "@emotion/styled";
-import shuffle from "lodash.shuffle";
+import * as React from "react"
+import { useState, useEffect } from "react"
+import styled from "@emotion/styled"
+import shuffle from "lodash.shuffle"
 
-import "../global.css";
-import "../fonts.css";
+import "../global.css"
+import "../fonts.css"
 
-import Logo from "../components/Logo";
-import AltLogo from "../components/AltLogo";
-import Box from "../components/Box";
-import Content from "../components/Content";
-import Page from "../components/Page";
-import Container from "../components/Container";
+import Logo from "../components/Logo"
+import AltLogo from "../components/AltLogo"
+import Box from "../components/Box"
+import Content from "../components/Content"
+import Page from "../components/Page"
+import Container from "../components/Container"
 
 const MainLogoWrap = styled.div`
   max-width: 360px;
-`;
+`
 
-const allThemes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const allThemes = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 export const Head = () => (
   <>
@@ -37,18 +37,18 @@ export const Head = () => (
       content="A casual weekly meetup for programmers of all experience levels in Victoria, BC."
     />
   </>
-);
+)
 
 const IndexPage = () => {
-  const [themes, setThemes] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1]);
+  const [themes, setThemes] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1])
 
-  const [one, two, three, four, five, six, seven, eight, nine] = themes;
+  const [one, two, three, four, five, six, seven, eight, nine] = themes
 
-  const shuffleColours = () => setThemes(() => shuffle(allThemes));
+  const shuffleColours = () => setThemes(() => shuffle(allThemes))
 
   useEffect(() => {
-    shuffleColours();
-  }, []);
+    shuffleColours()
+  }, [])
 
   return (
     <Page>
@@ -75,8 +75,8 @@ const IndexPage = () => {
               <a
                 href="#shuffle"
                 onClick={(e) => {
-                  shuffleColours();
-                  e.preventDefault();
+                  shuffleColours()
+                  e.preventDefault()
                 }}
               >
                 Click this!
@@ -331,7 +331,7 @@ const IndexPage = () => {
         </div>
       </Container>
     </Page>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
